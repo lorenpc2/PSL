@@ -1,0 +1,4 @@
+1. Open a terminal window and navigate to the project directory.
+2. Run 'pip install -r .\requirements.txt' to ensure that the necessary packages are installed.
+3. Run 'python .\app.py' to launch the app.
+4. Navigate to the address given by the terminal output in your browser to view the app.
