@@ -22,7 +22,7 @@ genres = list(
     sorted(set([genre for genres in movies.genres.unique() for genre in genres.split("|")]))
 )
 
-top_similarities_matrix = pd.read_csv("data/Smat_sub.csv")
+top_similarities_matrix = pd.read_csv("598Proj4/data/Smat_sub.csv")
 
 # Precomputed movies ratings to be used as filler recommendations
 # when myICBF cannot recommend at least ten movies
