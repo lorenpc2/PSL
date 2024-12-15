@@ -26,7 +26,7 @@ top_similarities_matrix = pd.read_csv("598Proj4/data/Smat_sub.csv")
 
 # Precomputed movies ratings to be used as filler recommendations
 # when myICBF cannot recommend at least ten movies
-ci_movie_ratings = pd.read_csv("data/ci_movie_ratings.csv", index_col=[0]).rating
+ci_movie_ratings = pd.read_csv("598Proj4/data/ci_movie_ratings.csv", index_col=[0]).rating
 
 def get_displayed_movies():
     return movies.head(100)
@@ -85,8 +85,8 @@ def _convert_ratings_output(ibcf_output) -> pd.DataFrame:
 
 
 def myIBCF(w):
-    S = pd.read_csv('data/Smat_sub.csv', index_col=0)
-    R = pd.read_csv('data/Movie_Rmat.csv', index_col=0)
+    S = pd.read_csv('598Proj4/data/Smat_sub.csv', index_col=0)
+    R = pd.read_csv('598Proj4/data/Movie_Rmat.csv', index_col=0)
     M = pd.read_csv('data/movies.dat', sep='::', engine = 'python', encoding="ISO-8859-1", header=None)
     #M.columns = ['MovieID', 'Title', 'Genres']
     M.columns = ['movie_id', 'title', 'genres']
