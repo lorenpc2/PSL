@@ -217,3 +217,7 @@ def on_getting_recommendations(style, ratings, ids):
 )
 def update_button_recommend_visibility(values):
     return not list(filter(None, values))
+
+
+if __name__ == "__main__":
+    app.run_server()
